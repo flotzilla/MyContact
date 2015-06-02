@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.*?>
+
+<GridPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="utils.AddFormDialog">
+  <children>
+    <AnchorPane prefHeight="239.0" prefWidth="252.0" GridPane.columnIndex="0" GridPane.rowIndex="0">
+      <children>
+        <TextField fx:id="fNameTextField" layoutX="113.0" layoutY="51.0" prefWidth="125.0" />
+        <Label fx:id="fNamelabel" labelFor="$fNameTextField" layoutX="24.0" layoutY="57.0" text="First name" />
+        <Label fx:id="fullNamelabel" layoutX="24.0" layoutY="85.0" text="Full name" />
+        <Label fx:id="nikNamelabel" layoutX="24.0" layoutY="109.0" text="NickName" />
+        <Label fx:id="phoneNumberNamelabel" layoutX="24.0" layoutY="161.0" text="Phone Number" />
+        <Label fx:id="emailNamelabel" layoutX="24.0" layoutY="134.0" text="Email" />
+        <TextField fx:id="fullNameTextField" layoutX="113.0" layoutY="79.0" prefWidth="125.0" />
+        <TextField fx:id="nickNameTextField" layoutX="113.0" layoutY="106.0" prefWidth="125.0" />
+        <TextField fx:id="phoneNumberTextField" layoutX="113.0" layoutY="158.0" prefWidth="125.0" />
+        <TextField fx:id="emailNameTextField" layoutX="113.0" layoutY="131.0" prefWidth="125.0" />
+        <Label layoutX="64.0" layoutY="14.0" text="Add new contact" textFill="#ff6433" textOverrun="ELLIPSIS" wrapText="false">
+          <font>
+            <Font name="Andalus" size="18.0" />
+          </font>
+        </Label>
+        <Button fx:id="submitButton" layoutX="196.0" layoutY="194.0" mnemonicParsing="false" onAction="#addNewPerson" text="Add" />
+      </children>
+    </AnchorPane>
+  </children>
+</GridPane>
